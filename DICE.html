@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lets DICE</title>
+    <link rel="stylesheet" href="ds.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">   </head>
+  <body>
+    <div class="title">
+      <h1>🎲DICE GAME🎲</h1><h2>Lets Dice#</h2>
+    </div>
+    <div class="players">
+      <div class="rollbut"><a href="#" class="REF" onclick="roll2()">Roll Dice</a></div>
+      <div class="roll">
+          <div class="p1">
+            <h2>PLAYER 1</h2>
+            <img src="dice1.png" id="i1">
+          </div>
+          <div class="p2">
+      <h2>PLAYER 2</h2>
+      <img src="dice1.png" id="i2">
+      </div>
+    </div>
+     <div class="result">
+    <p id="winner">Roll the dice</p></div></div>
+    <script>
+     function roll1()
+     {
+     r1=Math.floor(Math.random()*6)+1;
+     var image1="dice"+r1+".png";
+     document.getElementById('i1').setAttribute("src",image1);
+     }
+     function roll2()
+     {roll1();
+       r2=Math.floor(Math.random()*6)+1;
+       var image2="dice"+r2+".png";
+       document.getElementById('i2').setAttribute("src",image2);
+      console.log(r1);console.log(r2);
+     if (r1>r2) {document.getElementById('winner').innerHTML="💰Player 1 WINS🎉";}
+     else if(r1<r2){document.getElementById('winner').innerHTML="💰Player 2 WINS🎉";}
+     else{document.getElementById('winner').innerHTML="🎇DRAW🎆";}
+   }
+</script>
+  </body>
+</html>

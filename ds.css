@@ -1,0 +1,56 @@
+body{background-color: #66ffff;}
+.title
+{text-align:center;
+font-family: 'Zen Tokyo Zoo', cursive;
+ font-size:30px;
+
+}
+.REF {
+     background: #3DF670;
+   background-image: -webkit-linear-gradient(top, #3DF670, #0B5724);
+   background-image: -moz-linear-gradient(top, #3DF670, #0B5724);
+   background-image: -ms-linear-gradient(top, #3DF670, #0B5724);
+   background-image: -o-linear-gradient(top, #3DF670, #0B5724);
+   background-image: -webkit-gradient(to bottom, #3DF670, #0B5724);
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   height: 0;
+   line-height: 0;
+   color: #FFFFFF;
+   font-family: Garamond;
+   width: 88px;
+   font-size: 21px;
+   font-weight: 100;
+   padding: 20px;
+   -webkit-box-shadow: 0 4px 0 2px #000000;
+   -moz-box-shadow: 0 4px 0 2px #000000;
+   box-shadow: 0 4px 0 2px #000000;
+   text-shadow: 1px 1px 5px #000000;
+   border: solid #0D772A 1px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+.REF:hover {
+   border: solid #0D772A 1px;
+   background: #0B5724;
+   background-image: -webkit-linear-gradient(top, #0B5724, #3DF670);
+   background-image: -moz-linear-gradient(top, #0B5724, #3DF670);
+   background-image: -ms-linear-gradient(top, #0B5724, #3DF670);
+   background-image: -o-linear-gradient(top, #0B5724, #3DF670);
+   background-image: -webkit-gradient(to bottom, #0B5724, #3DF670);
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+.players{display: flex;height: 400px;flex-flow:column;
+  align-items:center;justify-content:space-around;
+}
+.roll{width: 400px;display: flex;flex-flow: row;justify-content:space-around;}
+.p1,.p2{font-family: 'Ruslan Display', cursive;}
+img{width:100px;height: 100px;}
+#winner{font-size: 60px;font-family: 'Zen Tokyo Zoo', cursive; }
